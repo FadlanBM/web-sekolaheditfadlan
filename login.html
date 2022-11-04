@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <!-- Summernote css -->
+   <link href="plugins/summernote/summernote.css" rel="stylesheet" />
+
+   <!-- Select2 -->
+   <link href="plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+   <!-- Jquery filer css -->
+   <link href="plugins/jquery.filer/css/jquery.filer.css" rel="stylesheet" />
+   <link href="plugins/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css" rel="stylesheet" />
+
+   <!-- App css -->
+   <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
+   <script src="assets/js/modernizr.min.js"></script>
+</head>
+<body>
+  <textarea name="" id="myeditor" cols="30" rows="10"></textarea>
+  <script>
+    $(document).ready(function() {
+        $("#myeditor").summernote({
+            placeholder: "Write your content here",
+            height: 200,
+        });
+    });
+  
+    function showContent() {
+        document.getElementById("myContent").innerHTML = 
+        $("#myeditor").summernote("code");
+    }
+    </script>
+      <!-- jQuery  -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/detect.js"></script>
+      <script src="assets/js/fastclick.js"></script>
+      <script src="assets/js/jquery.blockUI.js"></script>
+      <script src="assets/js/waves.js"></script>
+      <script src="assets/js/jquery.slimscroll.js"></script>
+      <script src="assets/js/jquery.scrollTo.min.js"></script>
+      <script src="plugins/switchery/switchery.min.js"></script>
+
+      <!--Summernote js-->
+      <script src="plugins/summernote/summernote.min.js"></script>
+      <!-- Select 2 -->
+      <script src="plugins/select2/js/select2.min.js"></script>
+      <!-- Jquery filer js -->
+      <script src="plugins/jquery.filer/js/jquery.filer.min.js"></script>
+
+      <!-- page specific js -->
+      <script src="assets/pages/jquery.blog-add.init.js"></script>
+
+      <!-- App js -->
+      <script src="assets/js/jquery.core.js"></script>
+      <script src="assets/js/jquery.app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote.min.js" integrity="sha512-6rE6Bx6fCBpRXG/FWpQmvguMWDLWMQjPycXMr35Zx/HRD9nwySZswkkLksgyQcvrpYMx0FELLJVBvWFtubZhDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.js" integrity="sha512-ZESy0bnJYbtgTNGlAD+C2hIZCt4jKGF41T5jZnIXy4oP8CQqcrBGWyxNP16z70z/5Xy6TS/nUZ026WmvOcjNIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css" integrity="sha512-ngQ4IGzHQ3s/Hh8kMyG4FC74wzitukRMIcTOoKT3EyzFZCILOPF0twiXOQn75eDINUfKBYmzYn2AA8DkAk8veQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote.min.css" integrity="sha512-m52YCZLrqQpQ+k+84rmWjrrkXAUrpl3HK0IO4/naRwp58pyr7rf5PO1DbI2/aFYwyeIH/8teS9HbLxVyGqDv/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
